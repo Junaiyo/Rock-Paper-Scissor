@@ -14,7 +14,7 @@ def InfiniteMode(IsScore, Inf, Per):
   YourScore = 0
   I = 1
   if Inf and not Per:
-    Inf = 100000000000000000
+    Inf = float('inf')
   elif not Inf and not Per:
     Inf = 10
     
@@ -74,7 +74,7 @@ def Main():
     time.sleep(1)
     Escolha = input("Here: ")
     if str(Escolha).lower() == "infinity":
-      rounds = 100000000000000000
+      rounds = float('inf)
     elif "infinity" not in Escolha.lower() and not any(num in Escolha for num in Nums):
         print("Wrong Choice")
         Main()
