@@ -1,0 +1,63 @@
+body, form {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  color: red;
+  padding: 8px;
+}
+select {
+  color: red;
+  font-size: 17px;
+  width: 150px;
+  height: 50px;
+}
+button {
+  font-size: 19px;
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+  width: 144px;
+  height: 48px;
+}
+p, label {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+input {
+  height: 38px;
+}
+
+@media(min-width: 800px) {
+  h1 {
+    font-size: 140px;
+  }
+  button {
+    display: block;
+    font-size: 100px;
+    width: 438px;
+    height: 146px;
+  }
+  select {
+    font-size: 64px;
+    width: 438px;
+    height: 146px;
+  }
+  p, label {
+    font-size: 73px;
+  }
+  input {
+    font-size: 80px;
+    height: 230px;
+    width: 280px;
+  }
+}
+
+
+.madebyjunaiyo {
+  font-size: 1000px;
+}

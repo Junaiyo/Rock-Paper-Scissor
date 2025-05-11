@@ -1,0 +1,48 @@
+const Selector = document.getElementById("EnvMode");
+let Score = false;
+let Qnt = 10000000000000;
+
+function Prompts() {
+  let p1 = prompt("How many rounds?");
+    let p2 = prompt("Do you want score system (true or false)?");
+    if (Number(p1) > 0 && p2 === "true" || p2 === "false" || p2 === "True" || p2 === "False") {
+      localStorage.setItem("Rounds", p1);
+    localStorage.setItem("Score", p2);
+    window.location.href="./infinity.html";
+    } else {
+      if (!Number(p1) > 0) {
+      alert("Invalid number entrance, say again");
+      } else {
+        alert("Invalid true or false entrance, say again");
+      }
+      Prompts();
+    }
+}
+
+Selector.addEventListener("click", () => {
+  const Choice = document.getElementById("Lula").value;
+  
+  localStorage.clear();
+  
+  if (Choice === "ScoredInf") {
+    Score = true;
+  } else if (Choice === "10RoundNW") {
+    Qnt = 10;
+  } else if (Choice === "10RoundWW") {
+    Qnt = 10;
+    Score = true;
+  } else if (Choice === "Customized") {
+    if (Math.floor(Math.random() * 2) >= 1) {
+    Prompts();
+    return;
+    } else {
+      window.location.href="./Personalized.html";
+      return;
+    }
+  }
+  localStorage.setItem("Score", Score);
+  localStorage.setItem("Rounds", Qnt);
+  window.location.href="./infinity.html";
+});
+
+//Made by Junaiyo
