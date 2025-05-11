@@ -1,6 +1,6 @@
 const Selector = document.getElementById("EnvMode");
 let Score = false;
-let Qnt = 10000000000000;
+let Qnt = Infinity;
 
 function Prompts() {
   let p1 = prompt("How many rounds?");
