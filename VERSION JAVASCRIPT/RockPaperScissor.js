@@ -21,9 +21,9 @@ function SelectMode() {
 let Mode = prompt(`Escolha um modo, entre "${Modes}", type E to exit te game`);
 
 if (Mode === "1") {
-  InfinityMode(false, 1000000000000, false, 0)
+  InfinityMode(false, Infinity, false, 0)
 } else if (Mode === "2") {
-  InfinityMode(true, 1000000000000, false, 0)
+  InfinityMode(true, Infinity, false, 0)
 } else if (Mode === "3") {
   InfinityMode(false, 1, false, 0)
 } else if (Mode === "4") {
@@ -31,7 +31,7 @@ if (Mode === "1") {
 } else if (Mode === "5") {
   Nums = Number(prompt("Quantos rounds vc quer?, type -1 for inf"));
   if (Nums === -1) {
-    Nums = 1000000000000;
+    Nums = Infinity;
   }
 
   Scr = prompt("Quer score? (s/n)?");
