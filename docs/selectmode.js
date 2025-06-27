@@ -36,7 +36,7 @@ Selector.addEventListener("click", () => {
     Prompts();
     return;
     } else {
-      window.location.href="./Personalized.html";
+      window.location.href="./personalized.html";
       return;
     }
   }
