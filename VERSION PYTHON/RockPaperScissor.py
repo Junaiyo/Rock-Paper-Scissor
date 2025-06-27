@@ -74,7 +74,11 @@ def Main():
     time.sleep(1)
     Escolha = input("Here: ")
     if str(Escolha).lower() == "infinity":
+<<<<<<< HEAD
       rounds = float('inf)
+=======
+      rounds = float('inf')
+>>>>>>> 5715956 (Rename)
     elif "infinity" not in Escolha.lower() and not any(num in Escolha for num in Nums):
         print("Wrong Choice")
         Main()
