@@ -1,9 +1,9 @@
 body, form {
   display: flex;
   background-color: black;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 h1 {
   color: red;
@@ -33,14 +33,18 @@ input {
 }
 
 @media(min-width: 800px) {
+  body, form {
+    display: inline;
+    text-align: center;
+  }
   h1 {
     font-size: 140px;
   }
   button {
-    display: block;
     font-size: 100px;
-    width: 438px;
-    height: 146px;
+    width: 35%;
+    height: 138px;
+    margin-left: 40px;
   }
   select {
     font-size: 64px;
@@ -55,9 +59,4 @@ input {
     height: 230px;
     width: 280px;
   }
-}
-
-
-.madebyjunaiyo {
-  font-size: 1000px;
 }

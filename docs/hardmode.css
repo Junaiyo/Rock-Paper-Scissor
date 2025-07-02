@@ -1,0 +1,39 @@
+/* eu sei que não precisava de mais css, mas é que eu tou aprendendo a melhorar css */
+
+body {
+  text-align: center;
+  background: linear-gradient(to left, rgb(215, 1, 90), rgb(0, 25, 50));
+}
+
+h1 {
+  color: rgb(200, 0, 200);
+  text-shadow: 1px -1px 0 rgb(200, 100, 210),
+  2px -2px 0 rgb(200, 110, 230),
+  3px -3px 0 rgb(200, 90, 255),
+  4px -4px 0 rgb(220, 90, 245),
+  5px -5px 0 rgb(230, 120, 255);
+}
+
+select {
+  width: 145px;
+  height: 45px;
+  font-size: 25px;
+  color: rgb(255, 80, 255);
+}
+
+button {
+  border-radius: 30px;
+  width: 135px;
+  height: 45px;
+  font-size: 22px;
+  color: red;
+}
+
+p {
+  font-size: 22px;
+  color: red;
+}
+
+h2 {
+  color: purple;
+}
