@@ -46,7 +46,7 @@ if (Score === "true") {
 const button = document.getElementById("EnvEntrance")
 button.addEventListener("click", () => {
   Answer = document.getElementById("Bolsonaro").value;
-  if (Answer === "Chose a option") {
+  if (Answer === "Chose a option" || Answer === "Just Try") {
     Answer = Plays[Math.floor(Math.random() * 3)];
   }
   
@@ -109,9 +109,9 @@ button.addEventListener("click", () => {
   let Msgs = ["The game is thinking", `Game Choice: ${GameChoice}`, `Your Choice: ${Answer}`, `${Winner}`];
   
  const RandomEffectMeasages = {
-      machineWinning: ["You're a loser", "You're wasting my time"],
-      machineLossing: ["I'll Supass you", "My victory will be soon"],
-      machineTie: ["You're Weak and patetic", "Is that all of do you have?"]
+      machineWinning: ["You're a loser", "You're wasting my time", "I'm better than you"],
+      machineLossing: ["I'll Supass you", "My victory will be soon", "I'm coming"],
+      machineTie: ["You're Weak and patetic", "Is that all of do you have?", "So boring"]
     }
   
   if (Score === "true") {

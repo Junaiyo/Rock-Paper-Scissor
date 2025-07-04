@@ -37,3 +37,26 @@ p {
 h2 {
   color: purple;
 }
+
+@media(min-width: 800px) {
+  h1 {
+    font-size: 120px;
+  }
+  select {
+    font-size: 450%;
+    width: 429px;
+    height: 140px;
+  }
+  button {
+    font-size: 100px;
+    width: 30%;
+    height: 138px;
+    margin-left: 50px;
+  }
+  p {
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 90px;
+  }
+}
