@@ -123,12 +123,15 @@ button.addEventListener("click", () => {
       if (isHard) {
         TotalMsgs=7;
         let Finished = false;
-        let RandomIndex = Math.floor(Math.random() * 2);
+        let RandomIndex;
         if (YourScore < GameScore) {
+          RandomIndex = Math.floor(Math.random() * (RandomEffectMeasages.machineWinning).length);
           Msgs.push(`GAME: ${RandomEffectMeasages.machineWinning[RandomIndex]}`);
         } else if (YourScore === GameScore) {
+          RandomIndex = Math.floor(Math.random() * (RandomEffectMeasages.machineTie).length);
           Msgs.push(`GAME: ${RandomEffectMeasages.machineTie[RandomIndex]}`);
         } else {
+          RandomIndex = Math.floor(Math.random() * (RandomEffectMeasages.machineLossing).length);
           Msgs.push(`GAME: ${RandomEffectMeasages.machineLossing[RandomIndex]}`);
         }
       }
