@@ -5,6 +5,22 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+div select {
+  position: relative;
+  margin: 1% 0 0 2%;
+}
+div button {
+  position: absolute;
+  top: 14%;
+  left: 55%;
+  height: 6%;
+}
+
+div button:hover {
+  color: purple;
+}
+
 h1 {
   color: red;
   padding: 8px;
