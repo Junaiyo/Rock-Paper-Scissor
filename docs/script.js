@@ -372,13 +372,13 @@ button.addEventListener("click", () => {
     }
   } else if (CMax < 35 && userStreak >=1 && userStreak <= 3 || dife >= 2) {
     let percents = Math.random();
-    if (percents <= 3) {
+    if (percents <= 0.3) {
       GameChoice = Predict;
       GameChoice2 = Predict2;
-    } else if (percents <= 4) {
+    } else if (percents <= 0.4) {
       GameChoice = Counters[Predict];
       GameChoice2 = Counters[Predict2];
-    } else if (percents <= 8) {
+    } else if (percents <= 0.8) {
       GameChoice = Counters[Answer];
       GameChoice2 = Counters[Answer2];
     } else {
@@ -387,13 +387,13 @@ button.addEventListener("click", () => {
     }
   } else if (CMax >= 35) {
     let percents = Math.random();
-    if (percents <= 6) {
+    if (percents <= 0.6) {
       GameChoice = Counters[Answer];
       GameChoice2 = Counters[Answer2];
-    } else if (percents <= 7) {
+    } else if (percents <= 0.7) {
       GameChoice = Predict;
       GameChoice2 = Predict2;
-    } else if (percents <= 8) {
+    } else if (percents <= 0.8) {
       GameChoice = Counters[Predict];
       GameChoice2 = Counters[Predict2];
     } else {
